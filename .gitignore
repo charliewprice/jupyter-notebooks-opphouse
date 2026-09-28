@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 Reports/inqueue
 Reports/outqueue
 Reports/__pycache__
+
 *.py
-=======
+# Exceptions for the following 
+!ReportMailer.py
+!ReportTimerange.py
+!GuestbookDbConnect.py
+
 guestbook_secrets.ini 
+
 .ipynb_checkpoints/
 *.html
->>>>>>> 16ae821b1346d377c72ba3c39a95850a73a100c1
 
