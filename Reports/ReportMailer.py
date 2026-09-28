@@ -13,10 +13,11 @@ def mailer(receiver_email, subject, body, filename, cc_list):
   # Create a multipart message and set headers
   message = MIMEMultipart()
   message["From"] = sender_email
-  message["To"] = receiver_email
+  #toList = ", ".join(receiver_email)
+  message["To"] = receiver_email[0] #", ".join(receiver_email)
   message["Subject"] = subject
   #message["Bcc"] = receiver_email  # Recommended for mass emails
-  message["Cc"] = cc_list
+  message["Cc"] = ", ".join(cc_list)
 
   # Add body to email
   message.attach(MIMEText(body, "plain"))

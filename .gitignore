@@ -1,7 +1,7 @@
 Reports/inqueue
 Reports/outqueue
 Reports/__pycache__
-
+*.xlsx
 *.py
 # Exceptions for the following 
 !ReportMailer.py
